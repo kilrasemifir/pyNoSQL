@@ -10,3 +10,10 @@ services:
     image: mongo-express
     ports:
       - 8080:8081
+  
+  utilisateurs:
+    build: .
+    environment: 
+      - MONGO_HOST=mongo
+    ports:
+      - 9000:9000

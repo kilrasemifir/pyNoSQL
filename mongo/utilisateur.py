@@ -1,7 +1,7 @@
 from pymongo import MongoClient
+import os
 
-
-mongo_host = "localhost"
+mongo_host = os.environ.get("MONGO_HOST", "localhost")
 mongo_port = 27017
 # Création d'un client mongo
 client = MongoClient(host=mongo_host, port=mongo_port)

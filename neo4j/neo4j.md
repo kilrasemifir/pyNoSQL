@@ -46,3 +46,9 @@ Vous avez selectionné une node de type UNTYPE portant le prenom `Truc` et le sa
 MATCH (p1:UNTYPE)-[:LIEN]->(amis)
 RETURN p1, amis
 ```
+
+## Exercie 3: en python
+1. Dans un fichier `.py`:
+```python
+
+```
